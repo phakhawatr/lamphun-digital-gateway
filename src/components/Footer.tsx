@@ -1,12 +1,8 @@
-
 import React from "react";
 import { Facebook, Instagram, Twitter, Youtube, Mail } from "lucide-react";
-
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
-
-  return (
-    <footer className="bg-white pt-16 pb-6">
+  return <footer className="pt-16 pb-6 bg-yellow-100">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-1">
@@ -90,8 +86,6 @@ const Footer: React.FC = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
